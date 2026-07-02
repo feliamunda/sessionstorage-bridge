@@ -23,7 +23,7 @@ unpacked extensions):
 
 1. Clone this repo somewhere permanent (not a temp directory).
    ```bash
-   git clone https://github.com/<your-username>/sessionstorage-bridge.git
+   git clone https://github.com/feliamunda/sessionstorage-bridge.git
    ```
 2. Go to `chrome://extensions` (or `edge://extensions`).
 3. Toggle **Developer mode** on (top-right corner).
