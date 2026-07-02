@@ -36,29 +36,11 @@ on a non-managed profile.
 
 ## Configure
 
-The extension ships with **no default keys** - `defaults.js` is an empty
-template:
-
-```js
-const DEFAULT_KEYS = [];
-```
-
-On first use, open the popup and type the sessionStorage key names you want
-to bridge into the **Keys to bridge** field (comma-separated), then click
-**Save keys**. This is stored in the extension's own storage
-(`chrome.storage.local`) and persists across browser restarts - you only
-need to do it once.
-
-If you want the popup pre-filled out of the box (e.g. sharing this with a
-team that always bridges the same keys), edit `defaults.js` before loading
-the extension:
-
-```js
-const DEFAULT_KEYS = ['access_token', 'refresh_token', 'user_data'];
-```
-
-Saved keys (via the popup) always take precedence over `defaults.js` - the
-file only matters before you've saved anything.
+The extension ships with no preset keys. On first use, open the popup and
+type the sessionStorage key names you want to bridge into the **Keys to
+bridge** field (comma-separated), then click **Save keys**. This is stored
+in the extension's own storage (`chrome.storage.local`) and persists across
+browser restarts - you only need to do it once.
 
 ## Use
 

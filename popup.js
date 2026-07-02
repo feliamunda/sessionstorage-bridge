@@ -12,8 +12,7 @@ function parseKeys(raw) {
 
 async function getStoredKeys() {
   const { bridgeKeys } = await chrome.storage.local.get('bridgeKeys');
-  if (bridgeKeys && bridgeKeys.length) return bridgeKeys;
-  return typeof DEFAULT_KEYS !== 'undefined' ? DEFAULT_KEYS : [];
+  return bridgeKeys && bridgeKeys.length ? bridgeKeys : [];
 }
 
 async function getActiveTab() {
