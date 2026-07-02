@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  body { font-family: system-ui, sans-serif; width: 280px; padding: 12px; }
+  h3 { margin: 0 0 8px; font-size: 14px; }
+  p.hint { font-size: 11px; color: #666; margin: 0 0 10px; }
+  label { font-size: 11px; color: #666; display: block; margin-bottom: 4px; }
+  input[type="text"] { width: 100%; box-sizing: border-box; padding: 6px; font-size: 12px; margin-bottom: 6px; }
+  button { display: block; width: 100%; margin-bottom: 8px; padding: 8px; font-size: 13px; cursor: pointer; }
+  #saveKeys { background: #eee; padding: 6px; font-size: 12px; }
+  hr { border: none; border-top: 1px solid #ddd; margin: 10px 0; }
+  #status { font-size: 12px; min-height: 32px; margin-top: 4px; }
+</style>
+</head>
+<body>
+  <h3>SessionStorage Bridge</h3>
+
+  <label for="keysInput">Keys to bridge (comma-separated)</label>
+  <input type="text" id="keysInput" placeholder="e.g. access_token, refresh_token, user_data">
+  <button id="saveKeys">Save keys</button>
+
+  <hr>
+
+  <p class="hint">1. Export on the tab where you're already logged in.<br>2. Switch tabs, Import on the target tab.</p>
+  <button id="export">Export from this tab</button>
+  <button id="import">Import into this tab</button>
+  <div id="status"></div>
+  <script src="defaults.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>

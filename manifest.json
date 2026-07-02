@@ -1,0 +1,11 @@
+{
+  "manifest_version": 3,
+  "name": "SessionStorage Bridge",
+  "version": "1.0.0",
+  "description": "Copies a configurable set of sessionStorage keys between browser tabs. Useful when one origin performs login and another (e.g. a local dev server) needs the same session.",
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "permissions": ["scripting", "activeTab", "storage"],
+  "host_permissions": ["<all_urls>"]
+}
